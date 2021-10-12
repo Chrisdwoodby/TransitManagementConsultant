@@ -2,12 +2,12 @@ import React, {useState, useEffect} from "react";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
-const Services = function() {
+const ContactPage = function() {
   return (
     <Container>
-      <div>these are what services we offer</div>
+      <div>this is how you can reach me</div>
     </Container>
   )
 }
 
-export default Services;
+export default ContactPage;
