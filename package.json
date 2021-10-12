@@ -1,0 +1,42 @@
+{
+  "name": "transitmanagementconsultant",
+  "version": "1.0.0",
+  "description": "Transit maintenance consultants web app",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development --config webpack.config.js",
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrisdwoodby/TransitManagementConsultant.git"
+  },
+  "author": "Christopher Woodby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrisdwoodby/TransitManagementConsultant/issues"
+  },
+  "homepage": "https://github.com/Chrisdwoodby/TransitManagementConsultant#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.1.3",
+    "css-loader": "^6.4.0",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.4",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "reactdom": "^2.0.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.8",
+    "@webpack-cli/generators": "^2.4.0"
+  }
+}
