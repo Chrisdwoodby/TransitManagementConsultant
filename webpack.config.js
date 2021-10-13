@@ -21,7 +21,14 @@ module.exports = {
           { loader: 'style-loader' },
           { loader: 'css-loader' }
         ]
-      }
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '/public/icons/[name].[ext]'
+        }
+    }
     ],
   },
   devtool: 'eval-source-map'

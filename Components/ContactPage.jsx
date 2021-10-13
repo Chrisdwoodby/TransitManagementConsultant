@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 const ContactPage = function() {
   return (
     <Container>
-      <div>this is how you can reach me</div>
+      <div style={{color: "white"}}>this is how you can reach me</div>
     </Container>
   )
 }
