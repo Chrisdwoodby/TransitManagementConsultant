@@ -16,7 +16,7 @@ import homeIMG3 from '../media/homeIMG3.png';
 const HomePage = function() {
   return (
     <div>
-      <Carousel fade>
+      <Carousel id="image_carousel" fade>
         <Carousel.Item interval={6000}>
           <img
             className="d-block w-100"

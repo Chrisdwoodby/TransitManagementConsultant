@@ -47,7 +47,7 @@ const NavHeader = function(props) {
         Services
       </Nav.Link>
       <Navbar.Brand style={{padding: "50px"}}>
-        <Image onClick={renderHome} src={Logo} width="350px" height="150px"/>
+        <Image id="company_logo" onClick={renderHome} src={Logo} width="350px" height="150px"/>
       </Navbar.Brand>
       <Nav.Link onClick={renderContact} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px", paddingRight: "200px"}}>
         Get in Touch
