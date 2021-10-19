@@ -40,20 +40,20 @@ const NavHeader = function(props) {
 
   return (
     <Navbar id="navigation" expand="lg">
-      <Nav.Link onClick={renderHome} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px", paddingLeft: "450px"}}>
+      <Nav.Link onClick={renderHome} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px", paddingLeft: "250px"}}>
         Home
       </Nav.Link>
-      <Nav.Link onClick={renderServices} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px"}}>
+      <Nav.Link onClick={renderServices} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px", paddingLeft: "200px", paddingRight: "50px"}}>
         Services
       </Nav.Link>
       <Navbar.Brand style={{padding: "50px"}}>
-        <Image src={Logo} width="350px" height="150px"/>
+        <Image onClick={renderHome} src={Logo} width="350px" height="150px"/>
       </Navbar.Brand>
-      <Nav.Link onClick={renderContact} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px"}}>
+      <Nav.Link onClick={renderContact} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px", paddingRight: "200px"}}>
         Get in Touch
       </Nav.Link>
       <Nav.Link onClick={renderAbout} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px"}}>
-        About
+        Our Story
       </Nav.Link>
     </Navbar>
   )

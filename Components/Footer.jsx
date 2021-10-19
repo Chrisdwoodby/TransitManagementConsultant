@@ -10,9 +10,9 @@ const Footer = function() {
     <div id="footer">
       <Container>
         <Row>
-          <Col></Col>
-          <Col><Image src={background}/></Col>
+          <Col style={{paddingLeft: "520px"}}><Image src={background}/></Col>
         </Row>
+        <p style={{color: "white", opacity: "0.5", textAlign: "center", paddingBottom: "100px"}}>2021 transitmaintenanceconsultants.com</p>
       </Container>
     </div>
   )

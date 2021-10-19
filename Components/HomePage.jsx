@@ -5,60 +5,51 @@ import Services from "./Services.jsx";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Carousel from 'react-bootstrap/Carousel'
 import Image from 'react-bootstrap/Image';
 import bus from '../media/bus.png';
+import cityscape from '../media/cityscape.png';
+import homeIMG2 from '../media/homeIMG2.png';
+import homeIMG1 from '../media/homeIMG1.png';
+import homeIMG3 from '../media/homeIMG3.png';
 
 const HomePage = function() {
   return (
     <div>
-      <Container style={{paddingTop: "100px", paddingBottom: "200px"}}>
-        <Row>
-          <Col style={{color: "white"}}>
-            <h3 style={{fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px",
-             paddingLeft: "200px", paddingTop: "50px", paddingRight: "20px"}}>Why TMC?
-            </h3>
-            <Row style={{padding: "20px", fontFamily: "sans-serif", letterSpacing: "2px"}}>
-              Maintaining transit bus equipment is a unique experience.  Buses are custom
-              made for each transit property, which results in unique repair and maintenance
-              experience and requirements.
-            </Row>
-            <Row>
-              <ul style={{fontFamily: "sans-serif", letterSpacing: "2px", paddingLeft:
-               "100px", paddingRight: "100px"}}>
-                <li>Proven solutions for maintenance problems</li>
-                <li>Equipment Specific Preventive maintenance Programs</li>
-                <li>Shop Audits</li>
-                <li>Equipment Reviews and Audits</li>
-                <li>Contract Preformance Reviews</li>
-              </ul>
-            </Row>
-          </Col>
-          <Col xs={1}></Col>
-          <Col style={{color: "white"}}>
-            <h3 style={{fontFamily: "sans-serif", textTransform: "uppercase",
-            letterSpacing: "2px", paddingLeft: "100px", paddingTop: "50px"}}>Our Reputation
-            </h3>
-            <Row style={{padding: "20px", fontFamily: "sans-serif", letterSpacing: "2px"}}>
-              Transit Maintenance Consulting is a group of highly experienced professionals
-              who have led large vehicle maintenance organizations through all phases of bus
-              acquisitions, and maintenance Programs.
-            </Row>
-            <Row style={{padding: "20px", fontFamily: "sans-serif", letterSpacing: "2px"}}>
-              Our team has written documents for formal bid submission, such as quality
-              manuals and start-up plans.
-            </Row>
-            <Row style={{padding: "20px", fontFamily: "sans-serif", letterSpacing: "2px"}}>
-              TMC can perform performance reviews confidentially, or provide public, board
-               level reports.
-            </Row>
-          </Col>
-        </Row>
-      </Container>
+      <Carousel fade>
+        <Carousel.Item interval={6000}>
+          <img
+            className="d-block w-100"
+            src={homeIMG2}
+            alt="First slide"
+            height="900"
+            width="2000"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={6000}>
+          <img
+            className="d-block w-100"
+            src={homeIMG1}
+            alt="Second slide"
+            height="900"
+            width="2000"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={6000}>
+          <img
+            className="d-block w-100"
+            src={homeIMG3}
+            alt="Third slide"
+            height="900"
+            width="2000"
+          />
+        </Carousel.Item>
+      </Carousel>
       <Container style={{paddingTop: "100px", paddingBottom: "150px"}}>
         <Row>
-          <Col id="tailoredNeeds" style={{backgroundColor: "#2b7a78", borderRadius: "15px", color: "white",
+          <Col id="tailoredNeeds" style={{backgroundColor: "#66fcf1", borderRadius: "15px",
            paddingLeft: "20px", fontFamily: "sans-serif", letterSpacing: "2px"}}>
-            <h2 style={{color: "white", fontFamily: "sans-serif", textTransform:
+            <h2 style={{fontFamily: "sans-serif", textTransform:
             "uppercase", letterSpacing: "2px", padding: "50px"}}>Tailored to your needs
             </h2>
             Getting new buses and need specifications, or factory line inspections?
