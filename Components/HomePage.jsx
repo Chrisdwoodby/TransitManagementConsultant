@@ -18,45 +18,40 @@ const HomePage = function() {
     <div>
       <Carousel id="image_carousel" fade>
         <Carousel.Item interval={6000}>
-          <img
+          <img id="slides"
             className="d-block w-100"
             src={homeIMG2}
             alt="First slide"
-            height="900"
-            width="2000"
           />
         </Carousel.Item>
         <Carousel.Item interval={6000}>
-          <img
+          <img id="slides"
             className="d-block w-100"
             src={homeIMG1}
             alt="Second slide"
-            height="900"
-            width="2000"
           />
         </Carousel.Item>
         <Carousel.Item interval={6000}>
-          <img
+          <img id="slides"
             className="d-block w-100"
             src={homeIMG3}
             alt="Third slide"
-            height="900"
-            width="2000"
           />
         </Carousel.Item>
       </Carousel>
       <Container style={{paddingTop: "100px", paddingBottom: "150px"}}>
-        <Row>
-          <Col id="tailoredNeeds" style={{backgroundColor: "#66fcf1", borderRadius: "15px",
-           paddingLeft: "20px", fontFamily: "sans-serif", letterSpacing: "2px"}}>
+        <Row id="text-bubble">
+          <Col id="tailoredNeeds">
             <h2 style={{fontFamily: "sans-serif", textTransform:
             "uppercase", letterSpacing: "2px", padding: "50px"}}>Tailored to your needs
             </h2>
-            Getting new buses and need specifications, or factory line inspections?
-            Contracting services, need to have a third party evaluate how your contractors
-             are doing? These are special services, involving some knowledge of FTA rules
-             and regulations. Our experienced team is ready to show you how this can be
-             done.  We can walk you through the process.
+            <article id="needs">
+              Getting new buses and need specifications, or factory line inspections?
+              Contracting services, need to have a third party evaluate how your contractors
+              are doing? These are special services, involving some  knowledge of FTA rules
+              and regulations. Our experienced team is ready to show you how this can be
+              done. We can walk you through the process.
+             </article>
           </Col>
           <Col>
             <Image src={bus} height="500" width="500"/>

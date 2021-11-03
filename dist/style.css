@@ -2,13 +2,66 @@
   background: linear-gradient(black, #17252a);
 }
 #tailoredNeeds {
- border: solid 1px #555;
- background-color: #eed;
- box-shadow:  0 0 10px #555;
- -moz-box-shadow: 0 0 10px #555;
- -webkit-box-shadow: 0 0 10px #555;
- -o-box-shadow: 0 0 10px #555;
+  background-color: #66fcf1;
+  border-radius: 15px;
+  margin: auto;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+#needs {
+  padding: 20px;
+}
+#text-bubble {
+  max-height: 100%;
+  max-width: 100%;
 }
 #footer {
   background: linear-gradient(#17252a, black);
+}
+#services {
+  padding: 50px;
+}
+#nav_home {
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: auto;
+}
+#nav_services {
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: auto;
+}
+#logo {
+  margin: auto;
+}
+#nav_contact {
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: auto;
+}
+#nav_story {
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: auto;
+}
+#slides {
+  height: 900px;
+  width: 2000px;
+}
+#footer {
+  background: linear-gradient(#17252a, black);
+}
+#footer .footer-logo {
+  height: 300px;
+  width: 350px;
+  align-items: center;
+  margin: auto;
 }

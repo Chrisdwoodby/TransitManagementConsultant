@@ -34,8 +34,8 @@ const Services = function() {
           </Col>
         </Row>
         <Image src={shop}/>
-        <Row style={{padding: "50px"}}>
-          <Col style={{padding: "50px"}}>
+        <Row id="services">
+          <Col id="services">
             <h3>Contracted Services Review</h3>
             <article>
               Our team is experienced in reviews of maintenance shop operations. Is the
@@ -46,7 +46,7 @@ const Services = function() {
               being met, and are all of the needs documented?
             </article>
           </Col>
-          <Col style={{padding: "50px"}}>
+          <Col id="services">
             <h3>Bus Procurements</h3>
             <article>
               Our team can provide reviews of bus and van technical specifications,

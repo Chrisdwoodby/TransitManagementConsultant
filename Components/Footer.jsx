@@ -8,12 +8,10 @@ import background from "../media/background.png";
 const Footer = function() {
   return (
     <div id="footer">
-      <Container>
         <Row>
-          <Col style={{paddingLeft: "520px"}}><Image id="company_logo" src={background}/></Col>
+          <img class="footer-logo" src={background}/>
         </Row>
         <p id="company_website_link" style={{color: "white", opacity: "0.5", textAlign: "center", paddingBottom: "100px"}}>2021 transitmaintenanceconsultants.com</p>
-      </Container>
     </div>
   )
 }
