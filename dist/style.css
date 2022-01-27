@@ -1,6 +1,13 @@
 #navigation {
   background: linear-gradient(black, #17252a);
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  justify-content: center;
+  text-align: center;
 }
+
 #tailoredNeeds {
  border: solid 1px #555;
  background-color: #eed;
@@ -9,6 +16,7 @@
  -webkit-box-shadow: 0 0 10px #555;
  -o-box-shadow: 0 0 10px #555;
 }
+
 #footer {
   background: linear-gradient(#17252a, black);
 }

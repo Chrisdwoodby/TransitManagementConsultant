@@ -1,8 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Services from "./Services.jsx";
-import { Link } from 'react-router-dom';
 import Logo from '../media/Logo.png';
 import Image from 'react-bootstrap/Image';
 
@@ -39,23 +37,25 @@ const NavHeader = function(props) {
 
 
   return (
-    <Navbar id="navigation" expand="lg">
-      <Nav.Link onClick={renderHome} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px", paddingLeft: "250px"}}>
+    <div>
+    <Navbar id="navigation">
+      <Nav.Link onClick={renderHome} >
         Home
       </Nav.Link>
-      <Nav.Link onClick={renderServices} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px", paddingLeft: "200px", paddingRight: "50px"}}>
+      <Nav.Link onClick={renderServices}>
         Services
       </Nav.Link>
       <Navbar.Brand style={{padding: "50px"}}>
-        <Image id="company_logo" onClick={renderHome} src={Logo} width="350px" height="150px"/>
+        <Image id="company_logo" onClick={renderHome} src={Logo}/>
       </Navbar.Brand>
-      <Nav.Link onClick={renderContact} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px", paddingRight: "200px"}}>
+      <Nav.Link onClick={renderContact} >
         Get in Touch
       </Nav.Link>
-      <Nav.Link onClick={renderAbout} style={{color: "white", fontFamily: "sans-serif", textTransform: "uppercase", letterSpacing: "2px"}}>
+      <Nav.Link onClick={renderAbout} >
         Our Story
       </Nav.Link>
     </Navbar>
+    </div>
   )
 }
 
