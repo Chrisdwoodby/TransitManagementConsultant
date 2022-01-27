@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from "react";
-import Button from 'react-bootstrap/Button';
+import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import repair from '../media/repair.png';
 import Image from 'react-bootstrap/Image';
 import shop from '../media/shop.png';
 import logoStrip from '../media/logoStrip.png';
