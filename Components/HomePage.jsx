@@ -1,14 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Services from "./Services.jsx";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel'
 import Image from 'react-bootstrap/Image';
 import bus from '../media/bus.png';
-import cityscape from '../media/cityscape.png';
 import homeIMG2 from '../media/homeIMG2.png';
 import homeIMG1 from '../media/homeIMG1.png';
 import homeIMG3 from '../media/homeIMG3.png';
