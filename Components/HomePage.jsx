@@ -16,36 +16,32 @@ const HomePage = function() {
       <Carousel id="image_carousel" fade>
         <Carousel.Item interval={6000}>
           <img
+            id="infoimage"
             className="d-block w-100"
             src={homeIMG2}
-            alt="First slide"
-            height="900"
-            width="2000"
+            alt="First slide"  
           />
         </Carousel.Item>
         <Carousel.Item interval={6000}>
           <img
+            id="infoimage"
             className="d-block w-100"
             src={homeIMG1}
-            alt="Second slide"
-            height="900"
-            width="2000"
+            alt="Second slide"      
           />
         </Carousel.Item>
         <Carousel.Item interval={6000}>
           <img
+            id="infoimage"
             className="d-block w-100"
             src={homeIMG3}
-            alt="Third slide"
-            height="900"
-            width="2000"
+            alt="Third slide"    
           />
         </Carousel.Item>
       </Carousel>
       <Container style={{paddingTop: "100px", paddingBottom: "150px"}}>
         <Row>
-          <Col id="tailoredNeeds" style={{backgroundColor: "#66fcf1", borderRadius: "15px",
-           paddingLeft: "20px", fontFamily: "sans-serif", letterSpacing: "2px"}}>
+          <Col id="text-bubble">
             <h2 style={{fontFamily: "sans-serif", textTransform:
             "uppercase", letterSpacing: "2px", padding: "50px"}}>Tailored to your needs
             </h2>

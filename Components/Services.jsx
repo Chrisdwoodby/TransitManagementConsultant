@@ -31,7 +31,9 @@ const Services = function() {
             </article>
           </Col>
         </Row>
-        <Image src={shop}/>
+        <Row>
+          <Image src={shop}/>
+        </Row>
         <Row style={{padding: "50px"}}>
           <Col style={{padding: "50px"}}>
             <h3>Contracted Services Review</h3>
@@ -56,8 +58,10 @@ const Services = function() {
             </article>
           </Col>
         </Row>
+        <Row>
+          <Image id="bus_logos" src={logoStrip}/>
+        </Row>
       </Container>
-      <Image id="bus_logos" width="1800" style={{paddingRight: "200px", paddingLeft: "200px"}} src={logoStrip}/>
     </div>
   )
 }

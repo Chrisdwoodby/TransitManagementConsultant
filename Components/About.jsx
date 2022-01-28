@@ -4,10 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
-const About = function(props) {
+const About = function() {
   return (
     <Container style={{paddingBottom: "200px"}}>
-      <Col xs={3} style={{borderRadius: "15px", textAlign: "center", backgroundColor: "#66fcf1"}}>
+      <Col id="text-bubble" xs={3} >
         <h3>The Story of</h3>
         <h1 style={{fontSize: "90px", fontWeight: "bold", fontFamily: "sans-serif"}}>TMC</h1>
       </Col>

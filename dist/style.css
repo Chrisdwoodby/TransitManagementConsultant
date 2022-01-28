@@ -10,15 +10,34 @@
 #navlink {
   color: white;
 }
-#tailoredNeeds {
- border: solid 1px #555;
- background-color: #eed;
- box-shadow:  0 0 10px #555;
- -moz-box-shadow: 0 0 10px #555;
- -webkit-box-shadow: 0 0 10px #555;
- -o-box-shadow: 0 0 10px #555;
+#text-bubble {
+  background-color: #1b2b31;
+  color: white;
+  border-radius: 15px;
+  box-shadow:  0 0 10px #555;
+  -moz-box-shadow: 0 0 10px #555;
+  -webkit-box-shadow: 0 0 10px #555;
+  -o-box-shadow: 0 0 10px #555;
 }
-
+#infoimage {
+  height: 900px;
+  width: 2000px;
+}
 #footer {
   background: linear-gradient(#17252a, black);
+}
+#footer_logo {
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  #navigation {
+    display: inline-flex;
+    flex-direction: column;
+  } 
+  #infoimage {
+    height: 300px;
+    width: 1000px;
+  }
+
 }
