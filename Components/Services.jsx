@@ -11,7 +11,7 @@ const Services = function() {
     <div style={{paddingBottom: "200px"}}>
       <Container style={{color: "white", fontFamily: "sans-serif", letterSpacing: "2px"}}>
         <Row style={{padding: "50px"}}>
-          <Col style={{padding: "50px"}}>
+          <Col id="service" style={{padding: "50px"}}>
             <h3 >Preventive Maintenance Programs</h3>
             <article>With a careful and thorough review of your fleet
             and operating profile, a PM Program can be produced that will fully address the
@@ -20,7 +20,7 @@ const Services = function() {
             Reliability and Appearance.
             </article>
           </Col>
-          <Col style={{padding: "50px"}}>
+          <Col id="service" style={{padding: "50px"}}>
             <h3>Shop Audits</h3>
             <article>Our team can conduct a review of your shop, the procedures
                and practices that can affect productivity and communication.
@@ -35,7 +35,7 @@ const Services = function() {
           <Image src={shop}/>
         </Row>
         <Row style={{padding: "50px"}}>
-          <Col style={{padding: "50px"}}>
+          <Col id="service" style={{padding: "50px"}}>
             <h3>Contracted Services Review</h3>
             <article>
               Our team is experienced in reviews of maintenance shop operations. Is the
@@ -46,7 +46,7 @@ const Services = function() {
               being met, and are all of the needs documented?
             </article>
           </Col>
-          <Col style={{padding: "50px"}}>
+          <Col id="service" style={{padding: "50px"}}>
             <h3>Bus Procurements</h3>
             <article>
               Our team can provide reviews of bus and van technical specifications,

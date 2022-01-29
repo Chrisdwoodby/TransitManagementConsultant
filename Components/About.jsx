@@ -8,8 +8,8 @@ const About = function() {
   return (
     <Container style={{paddingBottom: "200px"}}>
       <Col id="text-bubble" xs={3} >
-        <h3>The Story of</h3>
-        <h1 style={{fontSize: "90px", fontWeight: "bold", fontFamily: "sans-serif"}}>TMC</h1>
+        <h3>THE STORY OF</h3>
+        <h1>TMC</h1>
       </Col>
       <article id="about_the_company" style={{color: "white", paddingTop: "100px"}}>With over 40 years of managing fleets in the public and private sector operating over 500 buses TMC is honored and well suited for all of your needs. We have conducted peer reviews for public and private operators and authored bus and van vehicle specifications for over 1300 buses with nearly every fuel options including diesel, CNG, propane, hybrid and electric.
       Having served as a project manager for new maintenance facilities and designed and authored Preventive Maintenance Programs for private and public fleets, we have experienced many successful FTA Triennial Reviews as well as experience with turning around troubled maintenance organizations into models for others.

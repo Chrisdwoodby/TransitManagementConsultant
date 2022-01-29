@@ -39,7 +39,7 @@ const HomePage = function() {
           />
         </Carousel.Item>
       </Carousel>
-      <Container style={{paddingTop: "100px", paddingBottom: "150px"}}>
+      <Container style={{paddingTop: "100px", paddingBottom: "100px"}}>
         <Row>
           <Col id="text-bubble">
             <h2 style={{fontFamily: "sans-serif", textTransform:
@@ -52,7 +52,7 @@ const HomePage = function() {
              done.  We can walk you through the process.
           </Col>
           <Col>
-            <Image src={bus} height="500" width="500"/>
+            <Image id="front-of-bus" src={bus}/>
           </Col>
         </Row>
       </Container>

@@ -1,4 +1,5 @@
 #navigation {
+  width: 100%;
   background: linear-gradient(black, #17252a);
   font-family: sans-serif;
   text-transform: uppercase;
@@ -6,29 +7,53 @@
   color: black;
   justify-content: center;
   text-align: center;
+  padding-bottom: 50px;
 }
 #navlink {
   color: white;
 }
 #text-bubble {
-  background-color: #1b2b31;
+  text-align: center;
+  padding: 2.5%;
+  background-color: #10171a;
   color: white;
   border-radius: 15px;
-  box-shadow:  0 0 10px #555;
+  /* box-shadow:  0 0 10px #555;
   -moz-box-shadow: 0 0 10px #555;
   -webkit-box-shadow: 0 0 10px #555;
-  -o-box-shadow: 0 0 10px #555;
+  -o-box-shadow: 0 0 10px #555; */
+  font-family: sans-serif;
 }
+#contact-text-bubble {
+  text-align: center;
+  width: min-content;
+  margin: auto;
+  background-color: #10171a;
+  color: white;
+  padding: 2.5%;
+  border-radius: 15px;
+  /* box-shadow:  0 0 10px #555;
+  -moz-box-shadow: 0 0 10px #555;
+  -webkit-box-shadow: 0 0 10px #555;
+  -o-box-shadow: 0 0 10px #555; */
+  font-family: sans-serif;
+}
+
 #infoimage {
   height: 900px;
   width: 2000px;
 }
 #footer {
+  padding-top: 100px;
   background: linear-gradient(#17252a, black);
 }
 #footer_logo {
   justify-content: center;
   text-align: center;
+}
+#front-of-bus {
+  height: 500px;
+  width: 500px;
 }
 @media (max-width: 700px) {
   #navigation {
@@ -39,5 +64,37 @@
     height: 300px;
     width: 1000px;
   }
-
+  #front-of-bus {
+    opacity: 0.0;
+  }
 }
+#service {
+  text-align: center;
+}
+#contact-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  padding-bottom: 5%;
+}
+#contact-details {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+#contact-details-bottom {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  padding-bottom: 5%;
+}
+/* #contact-info {
+  align-items: center;
+  justify-content: center;
+} */

@@ -39,17 +39,17 @@ const NavHeader = function(props) {
   return (
     <div>
     <Navbar id="navigation">
+      <Navbar.Brand >
+        <Image id="company_logo" onClick={renderHome} src={Logo}/>
+      </Navbar.Brand>
       <Nav.Link id="navlink" onClick={renderHome} >
         Home
       </Nav.Link>
       <Nav.Link id="navlink" onClick={renderServices}>
         Services
       </Nav.Link>
-      <Navbar.Brand style={{padding: "50px"}}>
-        <Image id="company_logo" onClick={renderHome} src={Logo}/>
-      </Navbar.Brand>
       <Nav.Link id="navlink" onClick={renderContact} >
-        Get in Touch
+        contact
       </Nav.Link>
       <Nav.Link id="navlink" onClick={renderAbout} >
         Our Story
