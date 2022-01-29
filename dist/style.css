@@ -59,6 +59,10 @@
   #front-of-bus {
     opacity: 0.0;
   }
+  #company_logo {
+    width: auto;
+    margin: auto;
+  }
 }
 #service {
   text-align: center;
