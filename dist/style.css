@@ -18,10 +18,6 @@
   background-color: #10171a;
   color: white;
   border-radius: 15px;
-  /* box-shadow:  0 0 10px #555;
-  -moz-box-shadow: 0 0 10px #555;
-  -webkit-box-shadow: 0 0 10px #555;
-  -o-box-shadow: 0 0 10px #555; */
   font-family: sans-serif;
 }
 #contact-text-bubble {
@@ -32,10 +28,6 @@
   color: white;
   padding: 2.5%;
   border-radius: 15px;
-  /* box-shadow:  0 0 10px #555;
-  -moz-box-shadow: 0 0 10px #555;
-  -webkit-box-shadow: 0 0 10px #555;
-  -o-box-shadow: 0 0 10px #555; */
   font-family: sans-serif;
 }
 
@@ -94,7 +86,3 @@
   text-align: center;
   padding-bottom: 5%;
 }
-/* #contact-info {
-  align-items: center;
-  justify-content: center;
-} */
