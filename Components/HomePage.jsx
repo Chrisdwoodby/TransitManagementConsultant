@@ -1,49 +1,55 @@
 import React from "react";
-import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Carousel from 'react-bootstrap/Carousel'
 import Image from 'react-bootstrap/Image';
 import bus from '../media/bus.png';
-import homeIMG2 from '../media/homeIMG2.png';
-import homeIMG1 from '../media/homeIMG1.png';
-import homeIMG3 from '../media/homeIMG3.png';
+import { ElfsightWidget } from 'react-elfsight-widget';
 
 const HomePage = function() {
+
+  const renderServices = function() {
+    props.setHome(false);
+    props.setServices(true);
+    props.setContact(false);
+    props.renderAuthentication();
+    setShow(false);
+  };
+
   return (
     <div>
-      <Carousel id="image_carousel" fade>
-        <Carousel.Item interval={6000}>
-          <img
-            id="infoimage"
-            className="d-block w-100"
-            src={homeIMG2}
-            alt="First slide"  
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={6000}>
-          <img
-            id="infoimage"
-            className="d-block w-100"
-            src={homeIMG1}
-            alt="Second slide"      
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={6000}>
-          <img
-            id="infoimage"
-            className="d-block w-100"
-            src={homeIMG3}
-            alt="Third slide"    
-          />
-        </Carousel.Item>
-      </Carousel>
+      <div className="home-banner-container">
+            <Col className="home-banner-left">
+              <div>
+                <h1>Your Expert Transit </h1>
+              </div>
+            <ElfsightWidget className="form" widgetID="259f6071-ed60-4703-ba5c-5af5562e96a6" />
+            </Col>
+            <Col className="home-banner-right">
+              <div className="cta-box box-1">
+                <h2>Proven solutions for unique maintenance problems</h2>
+                <span>equipment specific preventive maintenance programs, Detailed Shop
+                   audits, Equipment reviews, and audits Contract performance reviews</span>
+                <a className="banner-cta-btn">Get A Quote</a>
+              </div>
+              <div className="cta-box-cols">
+                <Col className="cta-box box-2">
+                  <h3>We've Got You Covered</h3>
+                  <span>Your Diesel, CNG, Propane, Hybrid, and Electric Experts</span>
+                  <a className="banner-cta-btn" onClick={renderServices}>Learn More</a>
+                </Col>
+                <Col className="cta-box box-3">
+                  <h3>Preventive Maintenance Programs</h3>
+                  <span>Carefully reviewing the needs of your fleet and providing personalized recommendations.</span>
+                  <a className="banner-cta-btn" onClick={renderServices}>Learn More</a>
+                </Col>
+              </div>
+            </Col>
+          </div>
       <Container style={{paddingTop: "100px", paddingBottom: "100px"}}>
         <Row>
-          <Col id="text-bubble">
-            <h2 style={{fontFamily: "sans-serif", textTransform:
-            "uppercase", letterSpacing: "2px", padding: "50px"}}>Tailored to your needs
+          <Col md={6} sm={12} id="text-bubble-home">
+            <h2 >Tailored to your needs
             </h2>
             Getting new buses and need specifications, or factory line inspections?
             Contracting services, need to have a third party evaluate how your contractors

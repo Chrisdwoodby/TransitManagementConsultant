@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 #navigation {
   width: 100%;
   background: linear-gradient(black, #17252a);
@@ -5,13 +7,45 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: black;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
   text-align: center;
-  padding-bottom: 50px;
+}
+.header-col-left {
+  display: flex;
+}
+.header-col-left img {
+  height: 150px;
+}
+.nav-header {
+  display: flex;
+}
+.nav-link-container {
+  display: flex;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.mobile-nav-link-container {
+
 }
 #navlink {
   color: white;
+  margin: 5px 10px;
 }
+#text-bubble-home {
+  font-family: 'Righteous', sans-serif;
+  /* text-transform: uppercase; */
+  padding: 50px;
+  text-align: center;
+  padding: 2.5%;
+  background-color: #60686c;
+  color: white;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
 #text-bubble {
   text-align: center;
   padding: 2.5%;
@@ -47,11 +81,82 @@
   height: 500px;
   width: 500px;
 }
-@media (max-width: 700px) {
+.mobile-menu {
+  display: none
+}
+
+
+/* --------------- */
+.home-banner-container {
+  display: flex;
+  flex-direction: row;
+}
+.home-banner-left {
+  background-color: #222;
+  background: url('./city-bus.webp') !important;
+  background-position: center bottom !important;
+  background-size: cover !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 500px;
+}
+.box-1 {
+  color: #fff;
+}
+.cta-box-cols {
+  display: flex;
+}
+.cta-box {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 60px 40px;
+  justify-content: center;
+}
+.cta-box span {
+  margin: 25px 0px;
+}
+.box-2 {
+  background-color: #60b3fd;
+  /* color: #fff; */
+}
+.box-3 {
+  background-color: #49def2;
+}
+.banner-cta-btn {
+  padding: 5px 10px;
+  background-color: #fff200;
+  border-radius: 30px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.banner-cta-btn:hover {
+  scale: 1.1;
+}
+/* ----------------- */
+@media (max-width: 767px) {
+  #front-of-bus {
+    display: none;
+  }
   #navigation {
     display: inline-flex;
     flex-direction: column;
   } 
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+  #navlink {
+    color: #000;
+    margin: 5px 10px;
+  }
+  .nav-link-container {
+    display: none;
+  }
   #infoimage {
     height: 300px;
     width: 1000px;
@@ -59,9 +164,20 @@
   #front-of-bus {
     opacity: 0.0;
   }
-  #company_logo {
-    width: auto;
-    margin: auto;
+  #nav_logo {
+    width: 200px;
+    height: 100px;
+  }
+  #footer {
+    /* margin-top: -460px; */
+  }
+  #text-bubble {
+    margin-left: 73px;
+    width: 200px;
+  }
+  #about_the_company {
+    overflow-y: scroll;
+    height: 500px;
   }
 }
 #service {

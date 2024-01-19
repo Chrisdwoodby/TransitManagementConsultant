@@ -5,6 +5,7 @@ import Services from "./Services.jsx";
 import ContactPage from "./ContactPage.jsx";
 import Footer from './Footer.jsx';
 import About from './About.jsx';
+// import '../dist/style.css';
 
 const Main = function(props) {
 

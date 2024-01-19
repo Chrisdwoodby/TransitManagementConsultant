@@ -1,6 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App/>, document.getElementById('app'))
+const container = document.getElementById('app');
+const build = createRoot(container)
+build.render(<App/>)
